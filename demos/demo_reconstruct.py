@@ -29,6 +29,19 @@ from decalib.utils import util
 from decalib.utils.config import cfg as deca_cfg
 from decalib.utils.tensor_cropper import transform_points
 
+import time
+
+def timer_decorator(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        end_time = time.time()
+        elapsed_time = end_time - start_time
+        print(f"{func.__name__} 执行时间: {elapsed_time} 秒")
+        return result
+    return wrapper
+
+@timer_decorator
 def main(args):
     # if args.rasterizer_type != 'standard':
     #     args.render_orig = False
