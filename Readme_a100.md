@@ -60,3 +60,12 @@ pip install -r requirement_a100.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 python demos/demo_reconstruct.py -i TestSamples/examples --saveDepth True --saveObj True --rasterizer_type=pytorch3d 
 ```
+
+### doc 
+
+```
+https://docs.nvidia.com/deeplearning/frameworks/pytorch-release-notes/rel-23-04.html
+
+https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch
+
+```
