@@ -69,3 +69,16 @@ https://docs.nvidia.com/deeplearning/frameworks/pytorch-release-notes/rel-23-04.
 https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch
 
 ```
+
+
+### run flask
+
+```
+```
+
+#### run test
+
+```
+curl -X POST "http://localhost:5000/process-image" -F "file=@/workspace/project/DECA/TestSamples/AFLW2000/image00181.jpg"
+
+```
