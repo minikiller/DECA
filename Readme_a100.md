@@ -3,6 +3,7 @@
 docker run --gpus all -it --rm -v /data/sunlf:/workspace/project -p 8501:8501 nvcr.io/nvidia/pytorch:23.04-py3
 
 
+docker run --gpus all -it --rm -v /data/sunlf:/workspace/project -p 8502:8502 sunlf:latest
 #### run fetch 
 
 ```
